@@ -2,7 +2,7 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=blue&labelColor=grey">
 </p>
 
-<h1 align="center">Notify<h1>
+<h1 align="center">Notify Page<h1>
 
 <p align="center">
   <img width="100%" style="max-width:100%" src="https://github.com/rafaelc10/landing-page/blob/main/assets/images/Notify-Mockup.png">
@@ -21,3 +21,6 @@ Você pode acessar o site [aqui.](https://rafaelc10.github.io/notify-page/)
 
 ## :bookmark: Layout
 Design criado por Michael Reimer. Você pode visualizar o layout do projeto no [Behance](https://www.behance.net/gallery/13755555/Notify-(Free-PSD-HTMLCSS-Design)).
+
+## :memo: Licença
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
