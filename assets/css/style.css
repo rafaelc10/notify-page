@@ -442,6 +442,9 @@ footer li a{
         max-width: 490px;
         text-align: justify;
     }
+    section#video .video{
+        padding-left: 0;
+    }
     form {
         display: flex;
         margin: 0 10px;
