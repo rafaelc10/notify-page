@@ -9,7 +9,7 @@
 </p>
 
 ## :computer: Projeto
-Projeto realizado o módulo **HTML5 e CSS3** do curso [FullStack da B7Web](https://b7web.com.br/fullstack/).
+Projeto realizado com objetivo de aprimorar e testar os conhecimentos em HTML5 e CSS 3.
 
 ## :rocket: Tecnologias
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
