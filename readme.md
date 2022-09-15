@@ -23,4 +23,4 @@ Você pode acessar o site [aqui.](https://rafaelc10.github.io/notify-page/)
 Design criado por Michael Reimer. Você pode visualizar o layout do projeto no [Behance](https://www.behance.net/gallery/13755555/Notify-(Free-PSD-HTMLCSS-Design)).
 
 ## :memo: Licença
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
