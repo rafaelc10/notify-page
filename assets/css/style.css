@@ -5,55 +5,61 @@ body{
     padding:0;
     margin: 0;
 }
-
 .line{
     height: 10px;
     width: 100%;
     background-color: #2ecc71;
     background-size: cover;
 }
-
-
-.container{
-    margin: auto;
-    width: 1100px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .imagem{
-    background: url("../images/image.jpeg") no-repeat;
+    background: url("../images/image.jpeg") no-repeat top;
     width: 100%;
     height: auto;
     background-size: cover;
+    overflow:hidden;
 }
-
+.container{
+    margin: auto;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .conteudo{
-    width: 500px;
-    height: 720px;
+    padding: 0px 20px 160px 20px;
+    max-width: 530px;
+    width: 100%;
+    max-height: 700px;
+    height: 100%;
 }
-
 .conteudo h1{
+    filter: drop-shadow(-9px -5px 6px #000);
     font-family: 'Pacifico';
     font-size: 60px;
     color: white;
     font-weight: 100;
     margin-top: 170px;
 }
-
-.conteudo a{
-    color: #2ecc71;
-}
-
 .conteudo h3{
     font-family: Arial;
-    font-size: 20px;
-    color: white;
+    font-size: 1.5em;
+    color: #FFF;
+    filter: drop-shadow(0px 0px 2px #000);
+    line-height: 1.5em;
 }
-
+.conteudo span{
+    color: #2ecc71;
+}
+header .icons{
+    color: #FFF;
+    display: flex;
+    font-size: 25px;
+    width: 100%;
+    max-width: 490px;
+}
 .circle{
     border-radius: 50%;
-    background-color: black;
+    background-color: #000;
     opacity: 50%;
     height: 55px;
     width: 55px;
@@ -62,36 +68,36 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-.icones{
-    color: #decfb5;
-    display: flex;
-    font-size: 25px;
-}
-
 .circle:hover{
+    cursor: pointer;
     color: white;
     background-color: #2ecc71;
     opacity: 100%;
 }
-
-.mao{
-    background:url(../images/mao.png) no-repeat;
-    max-width: 100%;
-    width: 439px;
-    max-height: 507px;
-    height: 507px;
-    display: flex;
-    
-}
-
 .maocont{
-    display: flex;
-    align-items: flex-end;
+    position: relative;
+    width: 100%;
+    max-width: 420px;
     height: auto;
+    margin-top: 50px;
 }
-
-
+.maocont img{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+}
+main .container {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
+}
 .circle2{
     border-radius: 100%;
     width: 100px;
@@ -106,67 +112,54 @@ body{
     color: white;
     font-size: 43px;
 }
-
-
-main h2{
-    font-size: 22pt;
+.infos h2{
     font-family: 'Raleway', sans-serif;
     font-weight:bold;
+    text-align: center;
 }
-
-.infos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 310px;
-    
-}
-
-main p {
+.infos p {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     text-align: center;
     margin: 0;
     color: #aaa;
     margin-bottom: 60px;
+    padding: 0 10px;
 }
 
-section{
+section#video{
     background-color: #e3e3e3;
-    max-height: 430px;
-    height: 100%;
-    max-height: 600px;
-    width: 100%;
-    margin-top: 60px;
+    padding: 50px 0px;
 }
-
-section h1{
-    margin-top: 60px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 22pt;
+section .container{
+    max-width: 1140px;
+    padding: 0 20px;
 }
-
-section p{
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    color: #aaa;
-    margin: 0;
-    margin-bottom: 30px;
-}
-
 .email{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 550px;
 }
-
-.input-email{
-    display: flex;
-
+section#video h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 22pt;
+    margin: 0px 0px 24px 0px;
 }
-
-.email input[type=email]{
-    width: 305px;
+section#video p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #888;
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 510px;
+}
+section form {
+    display: flex;
+}
+input[type=email]{
+    width: 100%;
+    max-width: 315px;
     height: 55px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -174,9 +167,9 @@ section p{
     font-size: 18pt;
     padding-left: 20px;
     border:1px solid #c8c8c8;
+    border-right: none;
 }
-
-.email input[type=submit]{
+input[type=submit]{
     width: 140px;
     height: 55px;
     background-color: #2ecc71;
@@ -189,61 +182,138 @@ section p{
     border-bottom-right-radius: 10px;
     border:1px solid #c8c8c8;
 }
-
-section video{
-    margin-top: 60px;
-    border-radius: 10px;
-    margin-bottom: 60px;
-}
-
-.container2{
-    margin: auto;
-    width: 1100px;
+section .video{
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    max-width: 530px;
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+section video{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
-#margin{
-    margin-top: 60px;
-}
 
-article{
+section#social-media{
     font-family:'Raleway';
 }
-
-article p{
-    color:#848484;
-    font-size: 14pt;
-    margin: auto;
-    width: 890px;
+section#social-media .container{
+    margin-top: 60px;
+    flex-direction: column;
 }
-
-article h3{
+section#social-media p{
+    color:#848484;
+    font-style: oblique;
+    font-size: 14pt;
+    max-width: 921px;
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+    line-height: 20pt;
+}
+section#social-media h3{
     font-weight: bold;
     font-size: 14pt;
     text-align: center;
 }
-
 .pessoas{
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 60px;
-
 }
-
-.rosto{
-    background-image: url(../images/rosto.jpeg);
+.pessoas .img{
     width: 50px;
     height: 50px;
     background-size: cover;
-    margin: 0 2.5px;
+    margin: 2.5px;
+}
+.pessoas .img-hover{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.pessoas .img:first-child{
+    background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%), url('../images/1.jpg');
+}
+.pessoas .img:first-child .img-hover:hover{
+    background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+.pessoas .img-hover:hover{
+    cursor: pointer;
+    background-color: rgba(46, 204, 113, 0.7);
 }
 
-article h2{
+.pessoas .img:last-child{
+    background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%), url('../images/20.jpg');
+}
+.pessoas .img:last-child .img-hover:hover{
+    background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+}
+.pessoas .img:nth-child(2){
+    background-image: url('../images/2.jpg');
+}
+.pessoas .img:nth-child(3){
+    background-image: url('../images/3.jpeg');
+}
+.pessoas .img:nth-child(4){
+    background-image: url('../images/4.jpg');
+}
+.pessoas .img:nth-child(5){
+    background-image: url('../images/5.jpg');
+}
+.pessoas .img:nth-child(6){
+    background-image: url('../images/6.jpg');
+}
+.pessoas .img:nth-child(7){
+    background-image: url('../images/7.jpg');
+}
+.pessoas .img:nth-child(8){
+    background-image: url('../images/8.jpg');
+}
+.pessoas .img:nth-child(9){
+    background-image: url('../images/9.jpg');
+}
+.pessoas .img:nth-child(10){
+    background-image: url('../images/10.jpg');
+}
+.pessoas .img:nth-child(11){
+    background-image: url('../images/11.jpg');
+}
+.pessoas .img:nth-child(12){
+    background-image: url('../images/12.jpg');
+}
+.pessoas .img:nth-child(13){
+    background-image: url('../images/13.jpg');
+}
+.pessoas .img:nth-child(14){
+    background-image: url('../images/14.jpg');
+}
+.pessoas .img:nth-child(15){
+    background-image: url('../images/15.jpg');
+}
+.pessoas .img:nth-child(16){
+    background-image: url('../images/16.jpg');
+}
+.pessoas .img:nth-child(17){
+    background-image: url('../images/17.jpg');
+}
+.pessoas .img:nth-child(18){
+    background-image: url('../images/18.jpg');
+}
+.pessoas .img:nth-child(19){
+    background-image: url('../images/19.jpg');
+}
+section#social-media h2{
     font-size: 23pt;
     text-align: center;
 }
-
-article h5{
+section#social-media h5{
     color:#848484;
     font-size: 14pt;
     text-align: center;
@@ -251,30 +321,46 @@ article h5{
     margin: 0;
     margin-bottom: 30px;
 }
-
-#center{
+section#social-media nav{
+    display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    width: 100%;
+    padding-bottom: 60px;
 }
-
+section#social-media nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+section#social-media .icons{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    width: 100%;
+    max-width: 350px;
+}
+.icons a{
+    color: unset;
+    text-decoration: none;
+}
 .circle3{
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: #d4d4d4;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 17px;
-    margin: 0 5px;
+    font-size: 21px;
 }
-
 .circle3:hover{
     color: white;
     background-color: #2ecc71;
     opacity: 100%;
 }
+
+
 
 footer{
     background-color: #e3e3e3;
@@ -285,93 +371,133 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
 footer ul{
     list-style: none;
     display: flex;
 }
-
-footer li{
+footer li a{
     margin: 0 10px;
     color: #848484;
+    text-decoration: none;
+    line-height: 25px;    
 }
 
-@media only screen and (min-width:200px) and (max-width:800px) {
+@media only screen and (min-width:280px) and (max-width:768px) {
     .imagem{
         width: 100%;
         max-width: 800px;
         background-size: cover;
+        height: calc(100vh - 10px)
     }
-
     .container{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         max-width: 800px;
+        margin: auto;
     }
-
-    .container2{
-        width: 100%;
-        max-width: 800px;
-    }
-
-    .conteudo h1{
-        margin-top: 0px;
-    }
-
     .conteudo{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 5px;
+        padding: 160px 20px 160px 20px;
     }
-
-
+    .conteudo h1{
+        margin-top: 0px;
+    }
+    .conteudo h3{
+        font-size: 1.2em;
+    }
+    header .icons{
+        margin-top: 30px;
+    }
+    .maocont{
+        display: none;
+    }
     main .container{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    article p{
+    .container .infos{
         width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
     }
+    .infos p{
+        max-width: 490px;
+        padding: 20px;
+    }
+
 
     section .email{
         display: flex;
         flex-direction: column;
-        margin: 0 10px;
         align-items: center;
         justify-content: center;
+        max-width: 490px;
     }
-
-    section video{
-        width: 350px;
-        height: auto;
-
+    section#video p{
+        max-width: 490px;
+        text-align: justify;
     }
-
-    section .video{
+    form {
         display: flex;
-        justify-content: center;
+        margin: 0 10px;
+        max-width: 490px;
+        width: 100%;
     }
-
+    .email input[type=email]{
+        max-width: 390px;
+        width:100%;
+        height: 40px;
+        font-size: 12pt;
+        border-right: none;
+    }
+    
+    .email input[type=submit]{
+        max-width: 100px;
+        width: 100%;
+        height: 40px;
+        font-size: 12pt;
+        padding: 10px;
+        border: none;
+    }
+    section video{
+        width: 100%;
+        max-width: 540px;
+    }
+    section h1{
+        text-align: center;
+    }
     section{
         max-width: 800px;
         width: 100%;
-        height: 600px;
-        max-height: auto;
+        padding: 20px;
     }
 
+    section#social-media .container{
+        padding: 0;
+    }
+    section#social-media p{
+        width: 100%;
+        max-width: 530px;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+    section#social-media .icons .circle3{
+        width: 35px;
+        height: 35px;
+        font-size: 17px;
+        margin: 0 5px;
+    }
     .pessoas{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        overflow: hidden;
+        max-width: 500px;
     }
 
     footer{
@@ -379,32 +505,10 @@ footer li{
         width: 100%;
         max-width: 800px;
     }
-
-    
     footer ul{
         list-style: none;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
     }
-
-    .email input[type=email]{
-        width: 250px;
-        height: 55px;
-        font-size: 18pt;
-        padding-left: 20px;
-    }
-    
-    .email input[type=submit]{
-        width: 100px;
-        height: 55px;
-        font-size: 25px;
-        padding: 10px;
-    }
-    .input-email{
-        width: 400px;
-        margin: auto;
-    }
-
 }
